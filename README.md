@@ -8,7 +8,7 @@ Manuscript: Adsorption of ionic PFAS at the air-water interface at low concentra
 ## Included material
 
 - `data/fig4/`: processed model curves, measurements, fitted parameters, eligible/displayed points and regression results for Figure 4. Its README describes selection and statistics.
-- `data/si/`: current comparison metrics, pointwise prediction ratios, dilute-limit results, low-concentration refit summary, current v5 transport and inverse results, and initial-profile-to-SSL ratios. Historical parameter/provenance tables and legacy error summaries are deliberately excluded.
+- `data/si/`: current comparison metrics, pointwise prediction ratios, dilute-limit results, low-concentration refit summary, current v5 transport and inverse results, and initial-profile-to-SSL ratios. The final manuscript mass-action parameter provenance table and its verification notes are included; obsolete parameter records and legacy error summaries are excluded.
 - `data/transport_figure/`: profile and regime data associated with the transport figure. Cross-panel reconciliation remains to be completed.
 - `data/transport_v5_checksums.json`: portable checksums for the three files covered by the existing v5 transport provenance record. All three were verified against that record during preparation. These checksums do not authenticate all analyses or establish scientific validity.
 - `code/adsorption/`: Figure 4 plotting/model modules and their file-based PFOS inputs. The selected entry point is `plot_selected_pfas_master_curve.py`; the base module contains other workflows and must not be treated as the final standalone figure entry point.

@@ -1,0 +1,9 @@
+Compound,Purpose,K1_m3_mol,K2_m6_mol2,Gamma_m_mol_m2,Kbind_m3_mol,Current_status,Source_file
+PFOA,Final manuscript mass-action parameter set,49.2,0.13,3.36e-06,0.0026422764227642275,matches_final_SI_parameter_table,supporting_information.tex (Section S3; tab:mass_action_parameters_si)
+PFHxA,Final manuscript mass-action parameter set,1.69,0.0046,2.56e-06,0.0027218934911242606,matches_final_SI_parameter_table,supporting_information.tex (Section S3; tab:mass_action_parameters_si)
+PFOS,Final manuscript mass-action parameter set,1553.0,3.8825,3.0695e-06,0.0025,matches_final_SI_parameter_table,supporting_information.tex (Section S3; tab:mass_action_parameters_si)
+PFOA,Current Figure 4 model comparisons and dilute-limit analysis,49.2,0.13,3.36e-06,0.0026422764227642275,verified_against_current_fig4_source_data,figures/source_data/fig4/fig4_parameters.csv
+PFHxA,Current Figure 4 model comparisons and dilute-limit analysis,1.69,0.0046,2.56e-06,0.0027218934911242606,verified_against_current_fig4_source_data,figures/source_data/fig4/fig4_parameters.csv
+PFOS,Current Figure 4 model comparisons and dilute-limit analysis,1553.0,3.8825,3.0695e-06,0.0025,verified_against_current_fig4_source_data,figures/source_data/fig4/fig4_parameters.csv
+PFOA,Current forward and inverse transport (v5),49.2,0.13,3.36e-06,0.0026422764227642275,verified_against_current_v5_run_records,SI/source_data/transport_current_v5_forward_audit.csv; SI/source_data/transport_current_v5_ssl_audit.csv
+PFOS,Current forward and inverse transport (v5),1553.0,3.8825,3.0695e-06,0.0025,verified_against_current_v5_run_records,SI/source_data/transport_current_v5_forward_audit.csv; SI/source_data/transport_current_v5_ssl_audit.csv
