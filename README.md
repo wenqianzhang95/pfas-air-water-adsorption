@@ -17,6 +17,10 @@ Manuscript: Adsorption of ionic PFAS at the air-water interface at low concentra
 - `metadata/python_preparation_environment.json`: installed Python library versions on the preparation machine; these are not minimum supported versions or a validated environment specification.
 - `file_manifest.csv`: SHA-256, size, archive-relative path and category for each copied file, plus preparation-generated metadata.
 
+## Penalty-tolerance sensitivity
+
+SI Section S9 is supported by `data/si/regime_threshold_sensitivity/`, the matching figure in `figures/supplementary/`, and `code/sensitivity/analyze_regime_threshold_sensitivity.py`. The source-data README documents units, numerical domains, exact boundary definitions, statistical formulas and reproduction commands. This analysis tests tolerances 0.05/0.10/0.20 without refitting. Its complete inclusion does not resolve the other pending MD/calibration archive gaps listed below.
+
 ## Figure 4 entry point
 
 With Python, NumPy, pandas, SciPy and Matplotlib installed, run from `code/adsorption`:

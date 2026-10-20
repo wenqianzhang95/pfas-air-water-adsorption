@@ -1,0 +1,42 @@
+{
+  "maximum_absolute_onset_penalty_residual": 8.520961713998076e-15,
+  "Figure_4g_baseline_reproduced": true,
+  "fixed_parameters": {
+    "PFOA": [
+      49.2,
+      0.13,
+      3.36e-06,
+      414.0
+    ],
+    "PFHxA": [
+      1.69,
+      0.0046,
+      2.56e-06,
+      313.0
+    ],
+    "PFOS": [
+      1553.0,
+      3.8825,
+      3.0695e-06,
+      499.0
+    ]
+  },
+  "concentration_domain_mg_L": [
+    0.0001,
+    10000.0
+  ],
+  "NaCl_domain_mM": [
+    1.0,
+    1000.0
+  ],
+  "grid_shape": [
+    700,
+    600
+  ],
+  "equations": "Fixed-background-NaCl regime map; Figure 4 curves reused without refitting",
+  "input_SHA256": {
+    "fig4_a_f_model_curves.csv": "8d6a017f006ddbeb056b2882dff592424b553abc817eee35788744b9dfc08ec7",
+    "fig4_parameters.csv": "fbf70570c44ddb58228b89e9757dc0c9a0584dfc1d5e2539c90c7036504b3244",
+    "selected_pfas_master_curve_linearity.csv": "db44ab18d1b3ecb6877719fdca60a917ecf8de13d70997a1e5b52c06edc482f4"
+  }
+}
