@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Foreground Ubuntu launcher. Output remains visible in this terminal.
+set -euo pipefail
+case "${1:-}" in
+  t) shift; bash run_transport_live.sh "$@" ;;
+  s) shift; bash run_ssl_live.sh "${1:-all}" ;;
+  x) bash smoke_test_live.sh ;;
+  m) tail -f "${2:-transport_workflow.log}" ;;
+  *) echo 'Usage: ./go t | ./go s [1-4] | ./go x | ./go m [LOG]'; exit 2 ;;
+esac

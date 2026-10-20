@@ -1,0 +1,4 @@
+Dataset_ID,NaCl_mM,PFOS_concentration_mol_m3,Surface_excess_umol_m2,Method,Include_in_primary_comparison,Reason
+SCH2019_1mM_direct,1,1.11863641453222e-05,0.0223089212695595,Film method; direct mass balance,1,"Direct PFOS mass-balance point; salt-specific Langmuir fit exists."
+SCH2022_3mM_direct,3,2.00604462839662e-06,0.00802436507573691,Garrett metal-screen method; direct mass balance,0,"Direct PFOS point, but no separately fitted 3 mM Langmuir isotherm."
+SCH2019_10mM_direct,10,1.85157786975386e-05,0.0332340452473269,Film method; direct mass balance,1,"Direct PFOS mass-balance point; salt-specific Langmuir fit exists."

@@ -1,0 +1,2 @@
+n_points,Panel,selection,model,amplitude,decay_constant,R_squared,RMSE,theoretical_amplitude,theoretical_decay_constant
+1158,g,"both steric penalties <= 0.1, all eligible points",fixed theoretical exponential,1.0,1.0,0.9995427173077952,0.004724555598480813,1.0,1.0
