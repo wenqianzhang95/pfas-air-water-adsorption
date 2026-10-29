@@ -1,0 +1,162 @@
+# ----------------- Init Section -----------------
+ dimension 3 
+ boundary p p p
+ units real
+ neighbor 3.0 bin
+ neigh_modify every 1 delay 0 check yes 
+ atom_style   full
+
+# ----------------- Atom Definition Section -----------------
+ read_data "Data.data"
+
+# ----------------- Force Fields (OPLS-AA) -----------------
+ pair_style lj/cut/coul/long 10.0
+ pair_modify mix geometric
+ special_bonds lj/coul 0.0 0.0 0.5
+ kspace_style pppm 1e-4
+ pair_coeff 1 1 0.066 3.5     #C F3
+ pair_coeff 2 2 0.066 3.5     #C F2
+ pair_coeff 3 3 0.066 3.5     #C F2SO3
+ pair_coeff 4 4 0.053 2.95     #F
+ pair_coeff 5 5 0.053 2.95     #F2 C
+ pair_coeff 6 6 0.25 3.55     #S O3
+ pair_coeff 7 7 0.21 2.96     #O3 S
+ pair_coeff 8 8 0.1553 3.166 #O_H2O
+ pair_coeff 8 9 0.0 0.0
+ pair_coeff 9 9 0.0 0.0 #H
+ pair_coeff 10 10 0.1 2.584    #Na+
+ pair_coeff 11 11 0.1 4.4    #Cl-
+
+ bond_style harmonic
+ bond_coeff 1 367.0 1.332    #C-F
+ bond_coeff 2 268.0 1.529    #C-C
+ bond_coeff 3 340.0 1.77    #C-S
+ bond_coeff 4 700.0 1.44    #S-O
+ bond_coeff 5 1000.0 1.0      #Ow-Hw
+
+ angle_style harmonic
+ angle_coeff 1 77.0 109.1    #F-C-F
+ angle_coeff 2 50.0 109.5    #C-C-F
+ angle_coeff 3 58.35 112.7    #C-C-C
+ angle_coeff 4 50.0 108.6    #C-C-S
+ angle_coeff 5 74.0 108.9    #C-S-O
+ angle_coeff 6 50.0 109.5    #S-C-F
+ angle_coeff 7 104.0 119.0    #O-S-O
+ angle_coeff 8 100.0 109.47 #Hw-Ow-Hw
+
+ dihedral_style opls
+ dihedral_coeff 1 -2.5 0.0 2.5 0.0    #F-C-C-F
+ dihedral_coeff 2 0.3 0.0 0.4 0.0    #C-C-C-F
+ dihedral_coeff 3 1.740 -0.157 0.279 0.0    #C-C-C-C
+ dihedral_coeff 4 2.619 -0.62 0.258 0.0    #C-C-C-S
+ dihedral_coeff 5 0.0 0.0 0.347 0.0    #F-C-C-S
+ dihedral_coeff 6 0.0 0.0 0.347 0.0    #F-C-S-O
+ dihedral_coeff 7 0.0 0.0 -0.177 0.0    #C-C-S-O
+
+# ----------------- Group define -----------------
+group PFOS type 1 2 3 4 5 6 7
+group water type 8 9 
+group counterion type 10
+group coion type 11
+group PFOS_O type 7
+
+# ----------------- Minimization -----------------
+#dump whole_minimization all xyz 10 mini.xyz
+#min_style cg
+minimize 1.0e-5 1.0e-7 5000 10000
+write_data minimized.data
+#undump whole_minimization
+reset_timestep 0
+
+# ------------------- Output -------------------
+ compute T_water water temp 
+ compute T_PFOS PFOS temp 
+ compute V all voronoi/atom
+ compute msd water msd com yes
+
+ compute RDF_SNa all rdf 200 6 10
+ compute RDF_ONa all rdf 200 7 10
+ compute RDF_SCl all rdf 200 6 11
+ compute RDF_OCl all rdf 200 7 11
+
+ compute NaDen counterion chunk/atom bin/1d z lower 1 units box
+ compute ClDen coion chunk/atom bin/1d z lower 1 units box
+ compute WaterDen water chunk/atom bin/1d z lower 1 units box
+ compute PFASDen PFOS chunk/atom bin/1d z lower 1 units box
+ compute PFAS_ODen PFOS_O chunk/atom bin/1d z lower 1 units box
+
+ compute CHARGE all property/atom q
+ compute CHUNK_XBIN_ALL all chunk/atom bin/1d z lower 1 units box
+ compute charge_dist all chunk/atom bin/2d x lower 1 y lower 1 units box
+
+ compute PFAS PFOS group/group PFOS
+ compute Water water group/group PFOS
+ compute Na counterion group/group PFOS
+ compute Cl coion group/group PFOS
+
+ variable twopoint equal c_msd[4]/6/(step*dt+1.0e-6)
+ fix 9 all vector 10 c_msd[4]                            #store the MSD in f_9
+ variable fitslope equal slope(f_9)/6/(10*dt)
+ variable Vtot equal sum(c_V)
+
+ # Set up pressure tensor components
+ # c_thermo_press[1] is the XX component of the pressure tensor
+ variable xPress equal c_thermo_press[1] 
+ variable yPress equal c_thermo_press[2] 
+ variable zPress equal c_thermo_press[3]
+
+ # Compute surface tension
+ variable A_in_m equal 1e-10 # Angstrom in meter
+ variable atm_in_Pa equal 101325 # note: 1 Pa = 1 N/m^2
+ variable N_in_mN equal 1e3 # Newton in milliNewton
+ variable convFac equal ${A_in_m}*${atm_in_Pa}*${N_in_mN}
+ # lz is the box length in the z-dimention
+ variable st equal 0.5*lz*(v_zPress-0.5*(v_xPress+v_yPress))*${convFac} # in mN/m
+ fix st all ave/time 50 1 50 v_st file "out.surfTension.txt"
+
+ thermo 10000
+ thermo_style	custom step temp etotal press v_twopoint v_fitslope 
+ thermo_modify flush yes
+ dump img all xyz 10000  waterPFOS.xyz
+ dump myDump all atom 10000 trajectory.data
+ dump_modify myDump every 50000
+ dump_modify img element C C C F F S O P N Na Cl
+
+# ----------------- Run Section -----------------
+ velocity     water create 300 372748 rot yes dist gaussian 
+ velocity     PFOS create 300 372748 rot yes dist gaussian 
+ velocity     counterion create 300 372748 rot yes dist gaussian 
+ velocity     coion create 300 372748 rot yes dist gaussian 
+
+ fix fShakeSPCE water shake 0.0001 10 0 b 1 a 1 
+ fix  fxnvt1 all nvt temp 300.0 300.0 100.0
+ fix  RDF1 all ave/time 100 1000 100000 c_RDF_SNa[*] file rdf_SNa.rdf mode vector
+ fix  RDF2 all ave/time 100 1000 100000 c_RDF_ONa[*] file rdf_ONa.rdf mode vector
+ fix  RDF3 all ave/time 100 1000 100000 c_RDF_SCl[*] file rdf_SCl.rdf mode vector
+ fix  RDF4 all ave/time 100 1000 100000 c_RDF_OCl[*] file rdf_OCl.rdf mode vector
+ 
+ fix  PFASPFAS all ave/time 100 1000 100000 c_PFAS c_PFAS[1] c_PFAS[2] c_PFAS[3] file PFASPFAS.txt
+ fix  waterPFAS all ave/time 100 1000 100000 c_Water c_Water[1] c_Water[2] c_Water[3] file waterPFAS.txt 
+ fix  ClPFAS all ave/time 100 1000 100000 c_Cl c_Cl[1] c_Cl[2] c_Cl[3] file ClPFAS.txt
+ fix  NaPFAS all ave/time 100 1000 100000 c_Na c_Na[1] c_Na[2] c_Na[3] file NaPFAS.txt
+
+ fix  DP1 counterion ave/chunk 100 1000 100000 NaDen density/number file Na.profile
+ fix  DP2 coion ave/chunk 100 1000 100000 ClDen density/number file Cl.profile
+ fix  DP3 water ave/chunk 100 1000 100000 WaterDen density/number file water.profile
+ fix  DP4 PFOS ave/chunk 100 1000 100000 PFASDen density/number file PFAS.profile
+ fix  DP5 PFOS_O ave/chunk 100 1000 100000 PFAS_ODen density/number file O.profile
+
+ fix CHARGE_DENSITY_FIX all ave/chunk 100 1000 100000 CHUNK_XBIN_ALL c_CHARGE file out.charge_density
+ fix charge_dis all ave/chunk 100 1000 100000 charge_dist c_CHARGE file charge_xy.dat
+
+ #restart 100000 restart_file
+
+ #timestep 0.5     #dt=5e-7 ns
+ #run   20000 
+ 
+timestep 1
+ run   2000000      #t=0.1 ns
+write_data	2ns.nvt
+
+#timestep 1
+# run   200000      #t=0.2 ns

@@ -12,6 +12,7 @@ Authors: Wenqian Zhang and Bo Guo, Department of Hydrology and Atmospheric Scien
 | `data/si/` | Source data for every Supplementary section: Szyszkowski-Langmuir calibrations (`szyszkowski_langmuir_calibration/`), MD counterion-binding records and the exported Figure 2d-f arrays (`md_*`, `md_binding_inputs/`), model evaluation against surface-tension and MD data (`model_evaluation_20261028/`), adsorption-slope curves, direct surface-excess comparisons, dilute-limit ratios, penalty-tolerance sensitivity (`regime_threshold_sensitivity/`), transport and inverse soil-screening-level results (`transport_*`), the final mass-action parameter table and its provenance (`model_parameter_provenance*`), and the SI table source (`tables/`). Each subdirectory README documents units and reproduction commands. |
 | `data/transport_figure/` | Profile and regime data for the transport figure. |
 | `data/transport_v5_checksums.json` | Portable checksums for the three files covered by the v5 transport provenance record. |
+| `data/md/` | One complete LAMMPS case (PFOS, 100 mM NaCl, 0.26 umol m-2): input script, initial configuration, log, concentration profiles, RDFs, charge density and surface-tension output. `README.md` there documents the files; trajectories are not deposited. |
 | `code/adsorption/` | Figure 4 plotting and model modules with their file-based PFOS inputs. Entry point: `plot_selected_pfas_master_curve.py` (see below). |
 | `code/si/` | Supplementary analysis and figure scripts: Szyszkowski-Langmuir calibration plots, adsorption slopes, model evaluation (`evaluate_model_predictions.py`), MD table assembly, Figure 1 digitization audit, transport boundary-condition figure, penalty-tolerance sensitivity. These were written against the manuscript's `SI/source_data` layout; path arguments may need to point at `data/si/` when run from this repository. |
 | `code/sensitivity/` | Penalty-tolerance sensitivity analysis behind SI Section S9. |
@@ -38,7 +39,7 @@ Clean-environment check (28 October 2026, fresh Python 3.13 virtual environment 
 
 ## Transport model dependency
 
-The MATLAB code calls the MATLAB Reservoir Simulation Toolbox (MRST 2022a, GPL-3.0, https://www.sintef.no/projectweb/mrst/), which is not redistributed here. `code/transport/setpath.m` expects an `mrst-2022a` directory next to the scripts. The MATLAB version used for the archived runs and a clean-installation test are still to be documented (checklist item A6/B4).
+The MATLAB code calls the MATLAB Reservoir Simulation Toolbox (MRST 2022a, GPL-3.0, https://www.sintef.no/projectweb/mrst/), which is not redistributed here. `code/transport/setpath.m` expects an `mrst-2022a` directory next to the scripts. The archived transport and inverse soil-screening runs were executed on the University of Arizona HPC with MATLAB R2023a (recorded in the run logs of the source package) and MRST 2022a. A clean-installation test outside that environment has not been performed (checklist item B4).
 
 ## Third-party data
 
@@ -46,7 +47,7 @@ Experimental observations reused from the literature (Le et al. 2021; Lyu et al.
 
 ## Not yet included
 
-- MD simulation inputs, logs, processed concentration profiles and the profile-to-binding-ratio analysis (see `docs/MD_DATA_INVENTORY.md`).
+- MD inputs and outputs for the remaining simulation cases and the profile-to-binding-ratio analysis scripts; one representative case is in `data/md/` (see `docs/MD_DATA_INVENTORY.md`). Trajectories are available from the corresponding author on request.
 - A versioned release and its DOI.
 
 ## Licence

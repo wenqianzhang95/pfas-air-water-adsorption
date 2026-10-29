@@ -1,4 +1,8 @@
-# MD data inventory for the archive (status 2026-10-28)
+# MD data inventory for the archive (status 2026-10-29)
+
+Decision (authors, 2026-10-29): deposit one representative case without trajectories. Done:
+`data/md/PFOS_NaCl100mM_Gamma0.26/` (from `E:/PFAS/MD/binding model/I = 100 midle surface
+coverage/`). The rest of this note records what else exists locally.
 
 Purpose: record where the molecular dynamics material behind main-text Figures 1 and 2
 and Supplementary Section S1 currently lives on the authors' machine, so the authors can
