@@ -2,7 +2,7 @@
 
 Authors: Wenqian Zhang and Bo Guo, Department of Hydrology and Atmospheric Sciences, University of Arizona.
 
-**Status: private repository, preparation stage, last synchronized with the manuscript source on 28 October 2026. No public release, DOI or licence has been assigned yet.** The steps that remain before release are listed in `docs/RELEASE_CHECKLIST.md`. Main figures stored here are the current working versions and will be replaced when the manuscript's parameter set is frozen (see `data/si/model_evaluation_20261028/README.md`).
+**Status: private repository, preparation stage, last synchronized with the manuscript source on 28 October 2026. No public release or DOI has been assigned yet.** Code is released under the MIT License (`LICENSE`); authored data, figures and documentation under CC BY 4.0 (`LICENSE-DATA`). The steps that remain before release are listed in `docs/RELEASE_CHECKLIST.md`. Main figures stored here are the current working versions and will be replaced when the manuscript's parameter set is frozen (see `data/si/model_evaluation_20261028/README.md`).
 
 ## Layout
 
@@ -47,5 +47,10 @@ Experimental observations reused from the literature (Le et al. 2021; Lyu et al.
 ## Not yet included
 
 - MD simulation inputs, logs, processed concentration profiles and the profile-to-binding-ratio analysis (see `docs/MD_DATA_INVENTORY.md`).
-- Licence files for the authors' own code and data.
 - A versioned release and its DOI.
+
+## Licence
+
+- Code (`code/` and other scripts by the authors): MIT License, see `LICENSE`.
+- Data, figures and documentation authored by the authors: CC BY 4.0, see `LICENSE-DATA`.
+- Third-party experimental values reproduced from the literature are excluded from both licences; cite the original publications.

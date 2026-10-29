@@ -33,7 +33,7 @@ submission preparation; the rest are open.
 
 | # | Item |
 |---|---|
-| C1 | Choose licences and add `LICENSE` (code) and `LICENSE-DATA` (data). Common choice for Nature Portfolio archives: MIT or BSD-3-Clause for code, CC BY 4.0 for data. No licence file has been added because this is the authors' decision. |
+| C1 | **[done 2026-10-29]** Licences chosen by the authors: MIT for code (`LICENSE`), CC BY 4.0 for authored data, figures and documentation (`LICENSE-DATA`). Third-party literature values are excluded from both. Select the same two licences on the Zenodo record (C7). |
 | C2 | Push the current commits to GitHub (`git push origin main`), then make the repository public (GitHub → Settings → Danger zone → Change visibility). Peer review can also proceed with a private repository if the editor is given a reviewer link, but Zenodo's GitHub integration needs a public repository. |
 | C3 | Link Zenodo to GitHub: log in at https://zenodo.org (ORCID or GitHub login) → account menu → *GitHub* → flip the switch for `wenqianzhang95/pfas-air-water-adsorption`. |
 | C4 | Create a GitHub release (tag `v1.0.0`, title "Manuscript submission version"). Zenodo mints a DOI automatically within minutes; the record page shows a *version DOI* and a *concept DOI*. Use the concept DOI in the manuscript if you expect to post revised versions; cite the version DOI in `CITATION.cff`. |

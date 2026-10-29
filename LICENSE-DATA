@@ -1,0 +1,29 @@
+Data licence: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 Wenqian Zhang and Bo Guo, University of Arizona
+
+The data files authored by the copyright holders in this repository (the
+contents of `data/`, `figures/` and `metadata/`, including processed source
+data, model outputs, figure files and documentation) are licensed under the
+Creative Commons Attribution 4.0 International License.
+
+You are free to share (copy and redistribute the material in any medium or
+format) and adapt (remix, transform, and build upon the material) for any
+purpose, even commercially, under the following terms:
+
+  Attribution: you must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. Please cite the associated
+  article and this archive (see CITATION.cff).
+
+Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/
+
+Exclusions. Experimental observations reused from published studies
+(Le et al. 2021; Lyu et al. 2018; Schaefer et al. 2019; Huang et al. 2022;
+Steffens 2022; Buckley et al. 2023; Russell et al. 2025) are included only as
+the digitized or tabulated values used in this work. They remain the property
+of their original authors and publishers and are not relicensed here; cite the
+original publications when reusing them.
+
+Source code in this repository is licensed separately under the MIT License;
+see LICENSE.

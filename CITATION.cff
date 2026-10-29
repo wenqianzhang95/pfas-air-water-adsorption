@@ -12,6 +12,8 @@ authors:
     affiliation: "Department of Hydrology and Atmospheric Sciences, University of Arizona"
     email: boguo@arizona.edu
 repository-code: "https://github.com/wenqianzhang95/pfas-air-water-adsorption"
+license: MIT
+# Code: MIT (LICENSE). Authored data, figures and documentation: CC-BY-4.0 (LICENSE-DATA).
 # version and doi are filled in when the Zenodo release is created (see docs/RELEASE_CHECKLIST.md).
 # version: "1.0.0"
 # doi: 10.5281/zenodo.XXXXXXX
