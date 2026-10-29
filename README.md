@@ -1,8 +1,10 @@
 # Data and code for: Adsorption of ionic PFAS at the air-water interface at low concentrations
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23771962.svg)](https://doi.org/10.5281/zenodo.23771962)
+
 Authors: Wenqian Zhang and Bo Guo, Department of Hydrology and Atmospheric Sciences, University of Arizona.
 
-**Status: private repository, preparation stage, last synchronized with the manuscript source on 28 October 2026. No public release or DOI has been assigned yet.** Code is released under the MIT License (`LICENSE`); authored data, figures and documentation under CC BY 4.0 (`LICENSE-DATA`). The steps that remain before release are listed in `docs/RELEASE_CHECKLIST.md`. Main figures stored here are the current working versions and will be replaced when the manuscript's parameter set is frozen (see `data/si/model_evaluation_20261028/README.md`).
+**Status: public repository; release `PFAS_adsorption` (29 October 2026) is archived at Zenodo, DOI 10.5281/zenodo.23771962 (concept DOI 10.5281/zenodo.23771961 always resolves to the latest version). Manuscript submitted to Nature Water; the archive will be updated with a new release if figures or data change during review.** Code is released under the MIT License (`LICENSE`); authored data, figures and documentation under CC BY 4.0 (`LICENSE-DATA`). The steps that remain before release are listed in `docs/RELEASE_CHECKLIST.md`. Main figures stored here are the current working versions and will be replaced when the manuscript's parameter set is frozen (see `data/si/model_evaluation_20261028/README.md`).
 
 ## Layout
 
