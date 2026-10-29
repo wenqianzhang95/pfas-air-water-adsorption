@@ -51,6 +51,6 @@ Experimental observations reused from the literature (Le et al. 2021; Lyu et al.
 
 ## Licence
 
-- Code (`code/` and other scripts by the authors): MIT License, see `LICENSE`.
+- Code (`code/` and other scripts by the authors): MIT License, see `LICENSE`. The MIT text covers the software in this repository; it does not extend to the data files, which carry their own licence below.
 - Data, figures and documentation authored by the authors: CC BY 4.0, see `LICENSE-DATA`.
 - Third-party experimental values reproduced from the literature are excluded from both licences; cite the original publications.
