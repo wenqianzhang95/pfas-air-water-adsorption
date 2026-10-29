@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the associated article and this archive."
+title: "Data and code for: Adsorption of ionic PFAS at the air-water interface at low concentrations"
+type: dataset
+authors:
+  - family-names: Zhang
+    given-names: Wenqian
+    affiliation: "Department of Hydrology and Atmospheric Sciences, University of Arizona"
+    email: wenqianzhang95@arizona.edu
+  - family-names: Guo
+    given-names: Bo
+    affiliation: "Department of Hydrology and Atmospheric Sciences, University of Arizona"
+    email: boguo@arizona.edu
+repository-code: "https://github.com/wenqianzhang95/pfas-air-water-adsorption"
+# version and doi are filled in when the Zenodo release is created (see docs/RELEASE_CHECKLIST.md).
+# version: "1.0.0"
+# doi: 10.5281/zenodo.XXXXXXX
+# date-released: YYYY-MM-DD
+keywords:
+  - PFAS
+  - air-water interface
+  - adsorption
+  - counterion binding
+  - molecular dynamics
+  - vadose zone transport
+  - soil screening level
+preferred-citation:
+  type: article
+  title: "Adsorption of ionic PFAS at the air-water interface at low concentrations"
+  authors:
+    - family-names: Zhang
+      given-names: Wenqian
+    - family-names: Guo
+      given-names: Bo
+  journal: "Nature Water"
+  year: 2026
+  notes: "Submitted. Update volume, pages and DOI on publication."

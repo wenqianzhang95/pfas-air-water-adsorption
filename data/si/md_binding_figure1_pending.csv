@@ -1,0 +1,16 @@
+PFAS,NaCl_label_mM,Gamma_label_umol_m2,main_figure_panel,beta_percent,beta_reported_error_percentage_points,digitized_beta_percent,digitized_error_bar_percentage_points,status,table_status,matched_source_point_index
+PFOA,100,0.04,1g,,,32.200001538029106,0.44263222067390473,figure_digitized_original_data_pending,duplicate_approximate_gamma_label,4
+PFOA,100,0.26,1g,,,36.90000503783002,0.790597180604323,figure_digitized_original_data_pending,duplicate_approximate_gamma_label,3
+PFOA,100,0.47,1g,,,41.00000141247571,0.5376196425777304,figure_digitized_original_data_pending,duplicate_approximate_gamma_label,5
+PFOA,20,0.03,1h,,,21.61818756624512,3.2739808892646565,figure_digitized_original_data_pending,additional_figure1_record,
+PFOA,20,0.09,1h,,,17.786209665653786,1.007760707257414,figure_digitized_original_data_pending,additional_figure1_record,
+PFHxA,100,0.04,1g,,,34.59154262906615,1.8169271402655862,figure_digitized_original_data_pending,duplicate_mean_gamma_label_conflict,1
+PFHxA,100,0.26,1g,,,37.342630980834116,0.737619925072872,figure_digitized_original_data_pending,duplicate_mean_gamma_label_conflict,9
+PFHxA,100,0.47,1g,,,37.04106427847367,0.45877210975689564,figure_digitized_original_data_pending,duplicate_mean_gamma_label_conflict,13
+PFHxA,20,0.03,1h,,,20.225072061378544,3.496712635117439,figure_digitized_original_data_pending,additional_figure1_record,
+PFHxA,20,0.09,1h,,,21.505641491283203,2.9462362729320164,figure_digitized_original_data_pending,additional_figure1_record,
+PFOS,100,0.04,1g,,,15.176806646671242,8.900630921510137,figure_digitized_original_data_pending,duplicate_approximate_gamma_label,2
+PFOS,100,0.26,1g,,,28.128530895002676,0.8385585779571239,figure_digitized_original_data_pending,duplicate_approximate_gamma_label,4
+PFOS,100,0.47,1g,,,40.87993469967863,4.5727237443914905,figure_digitized_original_data_pending,additional_figure1_record,
+PFOS,20,0.03,1h,,,9.370377280457939,4.072337344932125,figure_digitized_original_data_pending,additional_figure1_record,
+PFOS,20,0.09,1h,,,14.95862136331415,1.587227351357948,figure_digitized_original_data_pending,additional_figure1_record,

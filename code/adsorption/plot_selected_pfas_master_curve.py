@@ -863,7 +863,9 @@ def main() -> None:
     fig.savefig(publication_pdf, bbox_inches=vertical_crop)
     fig.savefig(output_base.with_suffix(".png"), dpi=600, bbox_inches=vertical_crop)
     plt.close(fig)
-    print(f"Exported new figure: {publication_pdf.relative_to(ROOT)}")
+    # Output may be outside the script directory (e.g. --output-dir elsewhere),
+    # so report the path as given instead of relative to ROOT.
+    print(f"Exported new figure: {publication_pdf}")
 
 
 if __name__ == "__main__":

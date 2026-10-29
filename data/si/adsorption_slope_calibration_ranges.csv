@@ -1,0 +1,7 @@
+PFAS,I_mM,n_observations,c_min_mol_m3,c_max_mol_m3,c_min_figure_mg_L,c_max_figure_mg_L,shading_min_figure_mg_L,shading_max_figure_mg_L,shading_min_mol_m3,shading_rule,figure_molecular_weight_g_mol,source_datasets,source_references
+PFOA,10,12,2.44346e-05,9.736512988,0.0100914898,4021.1798640439997,0.09944296600000001,4021.1798640439997,0.000240782,second-lowest distinct concentration to highest concentration,413.0,PFOA_10mM,"lyu2018adsorption (10 mM); le2021new (50, 100 mM)"
+PFOA,50,7,0.00097757,3.900614267,0.40373641000000005,1610.953692271,41.300000000000004,1610.953692271,0.1,second-lowest distinct concentration to highest concentration,413.0,PFOA_50mM,"lyu2018adsorption (10 mM); le2021new (50, 100 mM)"
+PFHxA,100,8,0.001,100.0,0.313,31300.0,3.13,31300.0,0.01,second-lowest distinct concentration to highest concentration,313.0,PFHxA_100mM,le2021new
+PFHxA,200,8,0.001,100.0,0.313,31300.0,3.13,31300.0,0.01,second-lowest distinct concentration to highest concentration,313.0,PFHxA_200mM,le2021new
+PFOS,1,5,0.0499899077,0.5944527369,24.944963942300003,296.6319157131,49.8931288698,296.6319157131,0.0999862302,second-lowest distinct concentration to highest concentration,499.0,SCH2019_NaCl1mM,schaefer2019uptake
+PFOS,10,10,1.995157898946274e-05,0.99620270557695,0.009955837915741908,497.10515008289804,0.0996611846513714,497.10515008289804,0.0001997218129286,second-lowest distinct concentration to highest concentration,499.0,HUA2022_NaCl10mM_Set1,huang2022impact

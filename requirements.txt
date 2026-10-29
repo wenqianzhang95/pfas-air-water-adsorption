@@ -1,0 +1,9 @@
+# Python >= 3.10 is required (the adsorption scripts use PEP 604 union type hints).
+# Versions below are the ones used for the clean-environment regeneration check
+# recorded in docs/RELEASE_CHECKLIST.md; newer minor versions are expected to work.
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+matplotlib>=3.9
+# Optional: only code/si/digitize_md_binding_figure1.py imports pymupdf.
+# pymupdf>=1.24

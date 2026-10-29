@@ -1,0 +1,20 @@
+{
+  "source_records": 38,
+  "plotted_records_verified": 37,
+  "distinct_plotted_records": 36,
+  "duplicate_plot_entries": 1,
+  "pending_figure1_records": 15,
+  "figure1_digitized_records": 15,
+  "cross_figure_duplicate_records": 8,
+  "cross_figure_gamma_label_conflicts": 3,
+  "additional_figure1_table_records": 7,
+  "total_table_records": 43,
+  "figure1_digitized_csv_sha256": "7802839720091c2d3045b34e0902ee2471171d0bb35570f9964c125fce9f3a83",
+  "source_hashes": {
+    "main_binding_plot_points.csv": "4b9f531f74145337b3af71f2ce59a57c1d4daeb4d44d96fcfa9cdb58278a066d",
+    "PFHxA_plotResults_panels_data.json": "2213553f8bbf402b3b63297d089923faae0689822070a16395bab719f026e032",
+    "PFOA_plotResults_panels_data.json": "344d7deceea182b2e7ac3df68cc7f0b13e1cb3056618461943267b35002677e9",
+    "PFOS_plotResults_panels_data.json": "7c2432801963ed43352d9cb238b08ab24e688291ed30f8d7e408568a34f5acb2"
+  },
+  "error_convention": "Author specifies ensemble-averaged binding ratios and standard deviations. Input and figure-extracted error magnitudes retained without conversion."
+}

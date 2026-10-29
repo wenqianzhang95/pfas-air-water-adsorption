@@ -1,0 +1,17 @@
+[
+  {
+    "source": "E:\\PFAS\\binding ratio\\NatureWater_Overleaf\\source_data\\fig_transport_ssl_si\\panel_cd_transport_timeseries.csv",
+    "archived_file": "transport_current_v5_timeseries.csv",
+    "sha256": "dd9aaef3eef9987977e7f8ed2d08ce82f5b8344239381ebd8e1d13a188c0cfaf"
+  },
+  {
+    "source": "E:\\PFAS\\binding ratio\\NatureWater_Overleaf\\source_data\\fig_transport_ssl_si\\transport_v4_run_audit.csv",
+    "archived_file": "transport_current_v5_forward_audit.csv",
+    "sha256": "cd61b348625bf8dac483d1e61c5b5a800434298770becece9fa98a4284d6c4ca"
+  },
+  {
+    "source": "E:\\PFAS\\binding ratio\\NatureWater_Overleaf\\source_data\\fig_transport_ssl_si\\panel_e_ssl.csv",
+    "archived_file": "transport_current_v5_ssl_audit.csv",
+    "sha256": "e184b40d00f453d329e8590fa3994272aa96b1ada7ec5d72979d3cdfc9e678c5"
+  }
+]

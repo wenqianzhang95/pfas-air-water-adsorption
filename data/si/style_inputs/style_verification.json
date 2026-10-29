@@ -1,0 +1,32 @@
+{
+  "S2": {
+    "observations": 12,
+    "model_points": 72
+  },
+  "S5_10": {
+    "points_per_model": 10
+  },
+  "S5_100": {
+    "points_per_model": 10
+  },
+  "S4": {
+    "points_per_series": 10,
+    "predictions": "unchanged recorded pointwise values"
+  },
+  "S6": {
+    "refitting": false,
+    "parameter_source": "recorded full and trimmed fits"
+  },
+  "S7_10": {
+    "potential_points": 96,
+    "potential": "unchanged saved arrays"
+  },
+  "S7_100": {
+    "potential_points": 96,
+    "potential": "unchanged saved arrays"
+  },
+  "S9": {
+    "boundaries": "unchanged archived values",
+    "classification": "unchanged equations and grid"
+  }
+}

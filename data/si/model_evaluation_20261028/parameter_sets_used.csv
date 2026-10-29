@@ -1,0 +1,4 @@
+Compound,Purpose,K1_m3_mol,K2_m6_mol2,Gamma_m_mol_m2,Kbind_m3_mol,Current_status,Source_file
+PFOA,Final manuscript mass-action parameter set,49.2,0.13,3.36e-06,0.0026422764227642,matches_final_SI_parameter_table,supporting_information.tex (Section S3; tab:mass_action_parameters_si)
+PFHxA,Final manuscript mass-action parameter set,1.69,0.0046,2.56e-06,0.0027218934911242,matches_final_SI_parameter_table,supporting_information.tex (Section S3; tab:mass_action_parameters_si)
+PFOS,Final manuscript mass-action parameter set,1553.0,3.8825,3.0695e-06,0.0025,matches_final_SI_parameter_table,supporting_information.tex (Section S3; tab:mass_action_parameters_si)

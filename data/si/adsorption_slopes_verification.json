@@ -1,0 +1,31 @@
+{
+  "parameters_refitted": false,
+  "temperature_K": 298.0,
+  "maximum_low_concentration_relative_error": 9.979421121797394e-06,
+  "maximum_finite_difference_relative_error": 1.5966025168623332e-08,
+  "maximum_archived_Gamma_relative_difference": 3.883982468977365e-09,
+  "panels": 6,
+  "curves": 12,
+  "points_per_curve": 651,
+  "calibration_observations_shown": 50,
+  "shading_source": "SI/source_data/szyszkowski_langmuir_calibration/observations.csv",
+  "shading_definition": "second-lowest to highest distinct retained surface-tension concentration; adjacent-point slopes assigned to upper concentration",
+  "first_observation_retained_in_fit_and_top_ticks": true,
+  "mass_axis_conversion": "molar observations times the existing anion molecular weight",
+  "x_limits_by_compound_mg_L": {
+    "PFOA": [
+      1e-08,
+      10000.0
+    ],
+    "PFHxA": [
+      1e-08,
+      100000.0
+    ],
+    "PFOS": [
+      1e-08,
+      1000.0
+    ]
+  },
+  "dilute_limit_series": 13,
+  "source_parameter_file": "figures/source_data/fig4/fig4_parameters.csv"
+}

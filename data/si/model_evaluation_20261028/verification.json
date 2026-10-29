@@ -1,0 +1,21 @@
+{
+  "evaluation_date": "2026-10-28",
+  "parameter_basis": "current declared parameter sets; no refitting",
+  "baseline_surface_tension_mN_m": 72.0,
+  "temperature_K": 298.0,
+  "counterion_bulk_convention": "c2,0 = NaCl concentration + dissolved PFAS concentration, in mol/m3",
+  "error_definition": "sqrt(sum((prediction-observation)^2)/N), unweighted",
+  "surface_observations": 114,
+  "binding_plotted_rows": 37,
+  "binding_distinct_rows": 36,
+  "binding_preexisting_excluded_rows": 1,
+  "max_charge_relative_residual": 1.1851425982542027e-13,
+  "max_independent_solver_Gamma_relative_difference": 1.1102230246251565e-14,
+  "source_hashes": {
+    "NatureWater_Overleaf\\figures\\fig3_surface_tension_source_data.csv": "6486f58b7e4c2580ecc666d27e59ad1861bdf33913918d0435d64bfc186037e1",
+    "output\\editorial_review_20261019\\compiled_review_source\\SI\\source_data\\md_counterion_binding_source_records.csv": "6855640fa9b735590ed2c17a2dc14fd243583adf74005b1bcecd6566c5d47fcd",
+    "output\\editorial_review_20261019\\compiled_review_source\\SI\\source_data\\model_parameter_provenance.csv": "dae0f5ed54b37aac31f9407b7dd2fab520bedcdeef1dfcceae8a6aa9ede8f857"
+  },
+  "figures_modified": false,
+  "caution": "The current rendered Fig. 2 source curves are not all generated with the declared parameter sets. Their diagnostics are archived separately and must not be confused with the reported current-parameter metrics."
+}

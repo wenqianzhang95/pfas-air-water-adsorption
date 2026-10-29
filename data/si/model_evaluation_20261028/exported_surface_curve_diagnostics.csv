@@ -1,0 +1,16 @@
+PFAS,NaCl_mM,N,archive_interpolated_RMSE_mN_m,method
+PFHxA,0.0,7,0.5346503715111612,PCHIP in log concentration; diagnostic only
+PFHxA,100.0,8,0.5426357413436895,PCHIP in log concentration; diagnostic only
+PFHxA,200.0,8,0.36942690533267264,PCHIP in log concentration; diagnostic only
+PFHxA,300.0,8,0.4956339753107506,PCHIP in log concentration; diagnostic only
+PFHxA,500.0,8,0.7196394316784539,PCHIP in log concentration; diagnostic only
+PFOA,0.0,9,3.5323338352189135,PCHIP in log concentration; diagnostic only
+PFOA,10.0,12,0.9572948739522051,PCHIP in log concentration; diagnostic only
+PFOA,50.0,7,0.7113018458159714,PCHIP in log concentration; diagnostic only
+PFOA,100.0,7,0.5097810660334432,PCHIP in log concentration; diagnostic only
+PFOA,200.0,7,0.6225239206835739,PCHIP in log concentration; diagnostic only
+PFOA,300.0,7,1.1954617966739471,PCHIP in log concentration; diagnostic only
+PFOA,500.0,6,1.5355557513606213,PCHIP in log concentration; diagnostic only
+PFOS,1.0,5,1.097087173313958,PCHIP in log concentration; diagnostic only
+PFOS,10.0,10,0.6838764964871898,PCHIP in log concentration; diagnostic only
+PFOS,50.0,5,1.8884478426007218,PCHIP in log concentration; diagnostic only

@@ -1,0 +1,107 @@
+{
+  "font": "Arial",
+  "font_size_pt": 8.5,
+  "ink": "#282D32",
+  "palette_source": "scientific-figure-aesthetics palette specification",
+  "palettes": {
+    "chill-categorical": {
+      "kind": "categorical",
+      "usage": "Two to six unordered scientific categories",
+      "colors": [
+        "#557D9A",
+        "#6E9D88",
+        "#D0A25D",
+        "#C66F61",
+        "#7C7097",
+        "#8A7A69"
+      ]
+    },
+    "muted-spectral-10": {
+      "kind": "ordered-discrete",
+      "usage": "Six to ten ordered, low-crossing series",
+      "colors": [
+        "#4A2532",
+        "#8F304B",
+        "#BC4655",
+        "#DC6658",
+        "#E89062",
+        "#E9C985",
+        "#BCD29A",
+        "#83BDA6",
+        "#4E9A98",
+        "#437CA8"
+      ]
+    },
+    "aurora-8": {
+      "kind": "ordered-discrete",
+      "usage": "Five to eight ordered series requiring a broad indigo-to-yellow-green spectrum",
+      "colors": [
+        "#482475",
+        "#414487",
+        "#355F8D",
+        "#2A788E",
+        "#238A8D",
+        "#2A9D8F",
+        "#53B66D",
+        "#9FD63B"
+      ]
+    },
+    "calm-sequential": {
+      "kind": "sequential",
+      "usage": "Unsigned continuous values, spatial rasters, and intensity fields",
+      "colors": [
+        "#303B4A",
+        "#455665",
+        "#607382",
+        "#81909A",
+        "#A5ACA5",
+        "#C9BE9B",
+        "#E8D8AF"
+      ]
+    },
+    "calm-diverging": {
+      "kind": "diverging",
+      "usage": "Signed fields with a meaningful neutral center",
+      "center_index": 3,
+      "colors": [
+        "#304E68",
+        "#6F93A8",
+        "#C3D0D2",
+        "#F3EFE7",
+        "#DAB39D",
+        "#B96F5E",
+        "#7E3F42"
+      ]
+    },
+    "dark-field-cool-warm": {
+      "kind": "role-based-dark",
+      "usage": "Dark-field simulations, particle fields, volume renders, and astronomy imagery",
+      "colors": [
+        "#020305",
+        "#35404D",
+        "#7D8794",
+        "#E2E6EA",
+        "#A9C8EE",
+        "#C68A3A",
+        "#E1C08A"
+      ],
+      "roles": {
+        "background": "#020305",
+        "deep_structure": "#35404D",
+        "silver": "#7D8794",
+        "highlight": "#E2E6EA",
+        "cool_accent": "#A9C8EE",
+        "warm_accent": "#C68A3A",
+        "warm_highlight": "#E1C08A"
+      }
+    }
+  },
+  "roles": {
+    "mass_action": "#355F8D",
+    "szyszkowski_langmuir": "#C66F61",
+    "experiment": "#282D32",
+    "full_data_fit": "#355F8D",
+    "trimmed_data_fit": "#D0A25D",
+    "potential": "#7C7097"
+  }
+}

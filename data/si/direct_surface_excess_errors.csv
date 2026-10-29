@@ -1,0 +1,5 @@
+Compound,Ionic_strength_mM,Measurement_method,Mass_action_MSLE,Langmuir_MSLE,Status,Reference_key
+PFOA,10,foam_fractionation,0.09,0.47,working_recalculate_after_parameter_freeze,buckley2023using
+PFOA,100,foam_fractionation,0.28,0.87,working_recalculate_after_parameter_freeze,buckley2023using
+PFOS,1,pan_mass_balance,,,missing_final_calculation,schaefer2019uptake
+PFOS,10,pan_mass_balance,,,missing_final_calculation,schaefer2019uptake
